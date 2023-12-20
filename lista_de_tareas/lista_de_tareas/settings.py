@@ -47,6 +47,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'rest_framework', # añadimos drf
     'tarea_app', #añadimos esta linea
+    'rest_framework.authtoken', #añadimos el auth token
+    'drf_yasg', #añadimos el drf_yasg
 ]
 
 MIDDLEWARE = [
