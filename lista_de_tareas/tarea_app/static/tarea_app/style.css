@@ -2,7 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 20px;
     padding: 20px;
-    background-color: #e11919;
+    background-color: #08ece1;
 }
 
 .container {
@@ -15,17 +15,17 @@ body {
 }
 
 h1 {
-    color: #333;
+    color: #2a09a1;
 }
 
-.post {
+.tarea {
     margin-bottom: 20px;
     border-bottom: 1px solid #ddd;
     padding-bottom: 10px;
 }
 
 h2 {
-    color: #555;
+    color: #0a0000;
 }
 
 p.date {

@@ -1,15 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %}AdaBlog - Posts{% endblock %}
+{% block nombre  %} To-do-List - Tarea{% endblock %}
 
-{% block content %}
-    <h1>AdaBlog - Latest Posts</h1>
-    {% for post in posts %}
-        <div class="post">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.content }}</p>
-            <p class="date">Published on {{ post.pub_date }}</p>
-            <a href="{% url 'post-detail-template' pk=post.id %}">Read more</a>
+{% block descripcion %}
+    <h1> To-do-List - Ultimas Tareas </h1>
+    {% for tarea in tareas %}
+        <div class="tarea">
+            <h2>{{ tarea.nombre }}</h2>
+            <p>{{ tarea.descripcion }}</p> 
+            <p class="date">Published on {{ tarea.fecha_creacion }}</p>
+            <a href="{% url 'tarea-detalles-template' pk=tarea.id %}">Read more</a>
         </div>
     {% endfor %}
 {% endblock %}
